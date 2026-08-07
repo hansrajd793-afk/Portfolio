@@ -4,3 +4,13 @@
 .bgno{
     background-color: #ffffff8a;
 }
+.big-textbox {
+  width: 100%;       
+  height: 200px;     
+  padding: 12px;     
+  box-sizing: border-box; 
+  resize: vertical;  
+}
+html {
+  scroll-behavior: auto;
+}

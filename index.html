@@ -6,15 +6,16 @@
     <title>Hansraj D</title>
     <link rel="icon" type="image/x-icon" href="src\realpic.png">
     <link rel="stylesheet" href="style.css" type="text/css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <div class="row bg-body-tertiary" >
+    <header >
+        <div class="row bg-body-tertiary fixed-top" style="z-index: 999; width: 100%;" >
             <div class="col-md-6 pl-7 col-9">
                 <nav class="navbar ">
                      <div class="container-fluid">
-                            <a class="navbar-brand fs-4 fw-bold align-text-top" href="#">
+                            <a class="navbar-brand fs-4 fw-bold align-text-top" href="#home-section" >
                              Hansraj D
                     </a>
                     
@@ -22,7 +23,7 @@
 </nav>
             </div>
 <!-- navbar-start -->
-            <div class="col-md-6 my-auto col-3">
+            <div class="col-md-6 my-auto col-3 ">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,16 +32,13 @@
     <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
+          <a class="nav-link active text-black" aria-current="page" href="#home-section">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-black" href="#">Services</a>
+          <a class="nav-link text-black" href="#service-section">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-black" href="#">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-black" href="#">Contact</a>
+          <a class="nav-link text-black" href="#contact-section">Contact</a>
         </li>
         
       </ul>
@@ -49,7 +47,7 @@
 </nav><!-- navbar-end -->            </div>
         </div>
     </header>
-<section>
+<section id="home-section">
     <div class="container">
         <div class="row back1 p-4">
             <div class="col-md-6 text-center mt-5">
@@ -64,23 +62,74 @@
     </div>
 </section>
 <br>
-<h5 class="fw-bold p-2 text-primary text-center">What I Do</h5>
-<h3 class="fw-bold  text-dark text-center">My Services</h3>
+
 <br>
-<section>
+<section id="service-section">
     <div class="container">
-        <div class="row bgno">
-            <div class="card" style="width: 18rem;">
-                <img src="https://img.icons8.com/?size=100&id=sXm12ie1GUjg&format=png&color=000000" class="card-img-top rounded-circle w-auto h-auto img-fluid" style="width: 30px; height: auto;" alt="...">
+        <div class="row bg-body-tertiary">
+            <h5 class="fw-bold p-2 text-primary text-center">What I Do</h5>
+<h3 class="fw-bold  text-dark text-center">My Services</h3>
+            <div class="card col-md-4 m-3  p-2  mx-auto" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">W</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title text-center fw-bold">🤖 AI & Machine Learning Solutions</h5>
+                    <p class="card-text"><span class="fw-bold">B</span>uild intelligent applications using Machine Learning and Deep Learning to automate processes, make accurate predictions, and solve real-world business problems.</p>
+                </div>
+            </div>
+            <div class="card col-md-4 m-3 p-2  mx-auto" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">📊 Data Analysis & Visualization</h5>
+                    <p class="card-text"><span class="fw-bold">T</span>ransform raw data into meaningful insights through data cleaning, analysis, and interactive dashboards that support smarter business decisions.</p>
+                </div>
+            </div>
+            <div class="card col-md-4 m-3 p-2  mx-auto" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">🌐 Web Application Development</h5>
+                    <p class="card-text"><span class="fw-bold">D</span>evelop fast, responsive, and scalable web applications using Python, Flask, Django, and modern web technologies with seamless API integration.</p>
+                </div>
+            </div>
+            <div class="card col-md-4 m-3 p-2  mx-auto" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">💡 UI/UX Design</h5>
+                    <p class="card-text"><span class="fw-bold">C</span>reate clean, modern, and user-friendly interfaces with a focus on intuitive user experiences, responsive layouts, and visually appealing designs.</p>
                 </div>
             </div>
         </div>
+        
     </div>
 </section>
+<section id="contact-section">
+    <div class="container">
+        <div class="row" >
+            <form>
+  <div class="col-md-6 p-1">
+    <label for="exampleInputEmail1" class="form-label">Name</label>
+    <input type="text" class="form-control" id="nameinput" aria-describedby="nameHelp">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Message</label>
+    <textarea class="big-textbox" placeholder="Type your message here..."></textarea>
+  </div>
+  
+
+  <button type="submit" class="btn btn-primary p-2">Submit</button>
+</form>
+        </div>
+    </div>  
+</section>
+<footer class="bg-body-tertiary text-center p-3" >
+    <p class="text-dark">© 2024 Hansraj D. All rights reserved.</p>
+    <a href="https://www.linkedin.com/in/hansraj-d/" target="_blank" class="text-dark mx-2 text-decoration-none" >
+        <img src="src/linkedin.svg" class="img-fluid"  alt="LinkedIn">
+    </a>
+    <a href="https://www.instagram.com/_hansu_03?igsh=MWQzejRzY3QzYTgzNw==" target="_blank" class="text-dark mx-2 text-decoration-none">
+        <img src="src/instagram.svg" class="img-fluid"  alt="Instagram">
+    </a>
+    <a href="https://github.com/hansrajd793-afk" target="_blank" class="text-dark mx-2 text-decoration-none">
+        <img src="src/github.svg" class="img-fluid"  alt="GitHub">
+    </a>
+
+</footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
