@@ -142,10 +142,9 @@ export class TechConstellation {
     const theme = document.documentElement.dataset.theme || 'dark';
     const isLight = theme === 'light';
 
-    const fgColor = isLight ? '#0f172a' : '#f8fafc';
-    const mutedColor = isLight ? '#94a3b8' : 'rgba(255, 255, 255, 0.18)';
-    const accentColor = isLight ? '#0284c7' : '#00f2fe';
-    const mintColor = isLight ? '#0d9488' : '#10e7b2';
+    const fgColor = isLight ? '#08080a' : '#ffffff';
+    const mutedColor = isLight ? 'rgba(0, 0, 0, 0.15)' : 'rgba(255, 255, 255, 0.16)';
+    const accentColor = isLight ? '#08080a' : '#ffffff';
 
     this.ctx.clearRect(0, 0, this.width, this.height);
 
